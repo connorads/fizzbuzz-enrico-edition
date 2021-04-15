@@ -1,3 +1,3 @@
-export function myFun(_number: number) {
-  return '2';
+export function myFun(number: number) {
+  return number === 2 ? '2' : '1';
 }
