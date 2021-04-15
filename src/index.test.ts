@@ -4,7 +4,9 @@ import {myFun} from './index';
 // % 5 buzz
 // % 3*5 fizzbuzz
 
-it('should wait for Connor', () => {
-  expect(myFun(2)).toEqual('2');
-  expect(myFun(1)).toEqual('1');
+it.each([
+  [2, '2'],
+  [1, '1'],
+])('%s should return %s', (arg, exp) => {
+  expect(myFun(arg)).toEqual(exp);
 });
