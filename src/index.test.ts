@@ -6,4 +6,5 @@ import {myFun} from './index';
 
 it('should wait for Connor', () => {
   expect(myFun(2)).toEqual('2');
+  expect(myFun(1)).toEqual('1');
 });
