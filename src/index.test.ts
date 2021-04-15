@@ -7,6 +7,7 @@ import {myFun} from './index';
 it.each([
   [2, '2'],
   [1, '1'],
+  [4, '4'],
 ])('%s should return %s', (arg, exp) => {
   expect(myFun(arg)).toEqual(exp);
 });
